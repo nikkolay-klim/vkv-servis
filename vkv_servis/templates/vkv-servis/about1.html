@@ -1,0 +1,54 @@
+{%  extends "base.html"  %}
+{% load static %}
+
+{%  block content  %}
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/about/">About</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/products/">Products</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/contacts/">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-section about-heading">
+      <div class="container">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'vkv_servis/img/about.jpg' %}" alt="">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper"></span>
+                  <span class="section-heading-lower">About our metalsmith</span>
+                </h2>
+                <p>Vkv-servis offers products made of iron and artistic casting since 1992. Our works are decorated with hundreds of living and office premises. We manufacture both mass and unique products. We manufacture more than a dozen kinds of streetlights, exterior and interior lighting</p>
+                <p class="mb-0">The company is engaged in the casting business, we can carry protective coating of products up to 6 meters by powder painting, hot metallization of products with zinc</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ {% endblock %}
